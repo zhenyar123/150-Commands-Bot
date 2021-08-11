@@ -11,6 +11,7 @@ bot.phone = new Collection();
 bot.commands = new Collection();
 bot.aliases = new Collection();
 
+
 ["aliases", "commands"].forEach(x => bot[x] = new Collection());
 ["console", "command", "event"].forEach(x => require(`./handler/${x}`)(bot));
 
